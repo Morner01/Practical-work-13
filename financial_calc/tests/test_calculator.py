@@ -13,6 +13,8 @@ def test_calculate_compound_interest():
     assert calculate_compound_interest(2000, 0, 10, 2) == 2000.0
     with pytest.raises(ValueError):
         calculate_compound_interest(-2000, 0, 10, 2)
+    with pytest.raises(ValueError):
+        calculate_compound_interest(2000, 5, 10, -1)
 
 def test_calculate_tax():
     assert calculate_tax(100, 50) == 50.0
