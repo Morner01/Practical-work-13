@@ -1,6 +1,6 @@
 import pytest
 
-from calculator import calculate_simple_interest, calculate_compound_interest, calculate_tax
+from financial_calc.calculator import calculate_simple_interest, calculate_compound_interest, calculate_tax
 
 def test_calculate_simple_interest():
     assert calculate_simple_interest(2000, 5, 10) == 1000.0
